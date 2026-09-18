@@ -42,7 +42,7 @@ All data are publicly available from the [SEG Open Data Stratton 3D survey](http
 
 | Figure | Description |
 |--------|-------------|
-| **Fig. 1** | RMS amplitude map (1700–2400 ms) showing the high-energy zone and peak location (Inline 142 / Crossline 143) |
+| **Fig. 1** | RMS amplitude map (1600–2100 ms) showing the high-energy zone and peak location (Inline 142 / Crossline 143)|
 | **Fig. 2** | Inline and crossline sections through the high-amplitude package with the RMS window highlighted |
 | **Fig. 3** | Three orthogonal slices (inline, crossline, time slice) through the feature |
 | **Fig. 4** | WELL_10 full log suite (GR, SP, resistivity, neutron, density) |
@@ -108,3 +108,32 @@ These limitations are stated explicitly so the work stays transparent and reprod
 ---
 
 ## 8. Repository Structure
+
+stratton_project/
+├── data/
+│   ├── seismic/
+│   └── wells/
+├── notebooks/
+│   ├── 01_seismic_load_qc_attribute.ipynb
+│   └── 02_well_logs_and_integration.ipynb
+├── figures/                  # polished figures used in this README
+└── README.md
+
+
+---
+
+## 9. How to Reproduce
+
+1. Download the Stratton 3D volume and well logs from the SEG Open Data site.  
+2. Place them in the `data/` folders shown above.  
+3. Run the notebooks in order. All figures and conclusions can be regenerated from the code.
+
+---
+
+## 10. Author
+
+Gustavo Aguilar  
+Aspiring Junior Geophysicist – Houston, TX area  
+[LinkedIn: https://www.linkedin.com/in/gustavo-aguilar-598a2a195/] · [Email: tavo1961@yahoo.com]
+
+*This project was completed as a self-directed portfolio piece using only publicly available data.*
